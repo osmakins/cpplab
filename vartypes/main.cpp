@@ -17,10 +17,10 @@ int main()
 
     //enum example
     //define MONTHS as having 12 possible values
-    enum MONTHS {Jan, feb, Mar, Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec};
+    enum MONTH {Jan, feb, Mar, Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec};
     
     //define bestMonth as a variable type MONTHS
-    MONTHS bestMonth;
+    MONTH bestMonth;
     
     //assign bestMonth one of the values of MONTHS
     bestMonth = Jan;

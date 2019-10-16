@@ -7,3 +7,5 @@ https://google.github.io/styleguide/cppguide.html
 read more on enumerated variables and other data types
 http://www.cplusplus.com/doc/tutorial/other_data_types/
 
+enum convention
+https://stackoverflow.com/questions/1405851/enum-naming-convention-plural
