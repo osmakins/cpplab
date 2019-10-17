@@ -4,37 +4,31 @@
 
 #include <iostream>
 #include <fstream>
-#include <string>
+
 using namespace std;
 
 int main()
 {
-  string line;
+  // remove if file exists
+  remove("index.html") == 0 ? puts("new index file generated") : puts("index.html started");
+  
   //create an output stream to write to the file
   //append the new lines to the end of the file
-  ofstream myfileI("input.txt", ios::app);
+  ofstream myfileI("index.html");
   if (myfileI.is_open())
   {
-    myfileI << "\nI am adding a line.\n";
-    myfileI << "I am adding another line.\n";
+    myfileI << "<html>\n";
+    myfileI << "\t<head>\n";
+    myfileI << "\t\t<title>New Page</title>\n";
+    myfileI << "\t</head>\n";
+    myfileI << "\t<body>\n";
+    myfileI << "\t\t<h1>Index page</h1>\n";
+    myfileI << "\t</body>\n";
+    myfileI << "</html>\n";
     myfileI.close();
   }
   else
     cout << "Unable to open file for writing";
-
-  //create an input stream to write to the file
-  ifstream myfileO("input.txt");
-  if (myfileO.is_open())
-  {
-    while (getline(myfileO, line))
-    {
-      cout << line << '\n';
-    }
-    myfileO.close();
-  }
-
-  else
-    cout << "Unable to open file for reading";
 
   return 0;
 }
