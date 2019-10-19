@@ -12,3 +12,9 @@ https://stackoverflow.com/questions/1405851/enum-naming-convention-plural
 
 information on the getline command
 http://www.cplusplus.com/reference/string/string/getline/
+
+String stream
+http://www.cplusplus.com/reference/sstream/
+
+Using getline(cin, Xs) after cin>>Xs issues
+https://stackoverflow.com/questions/5739937/using-getlinecin-s-after-cin
