@@ -9,3 +9,6 @@ http://www.cplusplus.com/doc/tutorial/other_data_types/
 
 enum convention
 https://stackoverflow.com/questions/1405851/enum-naming-convention-plural
+
+information on the getline command
+http://www.cplusplus.com/reference/string/string/getline/
