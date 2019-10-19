@@ -8,7 +8,13 @@ int main()
 {
     int year = 0;
     int age = 0;
-    std::string name = " ";
+    std::string name;
+    
+    //using getline to get more words that are spaced
+    std::cout<<"Please, enter your full name: ";
+    std::getline(std::cin, name);
+    std::cout<<"Hello "<<name<<" !\n";
+    
     //print a message to the user
     std::cout<<"What year is your favorite? ";
     
@@ -26,9 +32,6 @@ int main()
     
     //output response to user
     std::cout<<"How interesting you learned to ride at "<<age<<"!\n";
-    
-    std::cout<<"What is your name? ";
-    std::cin>>name;
-    std::cout<<"Hello "<<name<<" !\n";
+
     return 0;
 }
