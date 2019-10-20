@@ -9,7 +9,6 @@
 
 #include <iostream>
 #include <cmath>
-#define M_PI 3.14
 
 using namespace std;
 
