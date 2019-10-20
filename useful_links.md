@@ -22,3 +22,6 @@ https://stackoverflow.com/questions/5739937/using-getlinecin-s-after-cin
 Arithmetic operation
 http://www.cplusplus.com/doc/tutorial/operators/
 https://stackoverflow.com/questions/25831334/operand-of-must-be-a-pointer?rq=1
+
+Maths Constants syntax as required by MS
+https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants?redirectedfrom=MSDN&view=vs-2019
