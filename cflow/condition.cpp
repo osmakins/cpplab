@@ -1,4 +1,4 @@
-/*Goal: demonstrate conditions using if/else statement.*/
+/*Goal: demonstrate conditions using switch statement.*/
 
 #include <iostream>
 
@@ -14,24 +14,21 @@ int main()
   std::cout << "Enter your choice: ";
   std::cin >> menuItem;
 
-  if (menuItem == 1)
+  switch (menuItem)
   {
+  case (1):
     std::cout << "Skiing?! Sounds dangerous!\n";
-  }
-  else if (menuItem == 2)
-  {
+    break;
+  case (2):
     std::cout << "Sledding?! Sounds like work!\n";
-  }
-  else if (menuItem == 3)
-  {
+    break;
+  case (3):
     std::cout << "Sitting by the fire?! Sounds warm!\n";
-  }
-  else if (menuItem == 4)
-  {
+    break;
+  case (4):
     std::cout << "Hot chocolate?! Yum!\n";
-  }
-  else
-  {
+    break;
+  default:
     std::cout << "Enter a valid menu item\n";
   }
   return 0;
