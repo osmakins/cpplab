@@ -31,5 +31,25 @@ int main()
   default:
     std::cout << "Enter a valid menu item\n";
   }
+
+  // Switch statement with no breaks
+
+  char begin;
+  std::cout << "\n\nWhere do you want to begin?\n";
+  std::cout << "B: At the beginning?\nM: At the middle?";
+  std::cout << "\nE: At the end?\n\n";
+
+  std::cout << "Enter your choice: ";
+  std::cin >> begin;
+
+  switch (begin)
+  {
+  case ('B'):
+    std::cout << "Once upon a time there was a wolf.\n";
+  case ('M'):
+    std::cout << "The wolf hurt his leg.\n";
+  case ('E'):
+    std::cout << "The wolf lived happily everafter\n";
+  }
   return 0;
 }
