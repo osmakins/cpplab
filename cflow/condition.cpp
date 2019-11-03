@@ -49,7 +49,7 @@ int main()
   case ('M'):
     std::cout << "The wolf hurt his leg.\n";
   case ('E'):
-    std::cout << "The wolf lived happily everafter\n";
+    std::cout << "The wolf lived happily ever after\n";
   }
   return 0;
 }
