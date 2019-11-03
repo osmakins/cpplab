@@ -3,6 +3,7 @@
 */
 
 #include <iostream>
+#include <cstddef>
 
 using namespace std;
 
@@ -10,7 +11,8 @@ int main()
 {
 
   float num, res, avg;
-  int i;
+  // implicit type cast can make the code more portable and in some cases more secure
+  size_t i;
   for (i = 0; i < 5; i++)
   {
     cout << "num " << i + 1 << ": ";
