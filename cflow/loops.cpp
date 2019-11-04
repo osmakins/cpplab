@@ -12,16 +12,17 @@ int main()
 
   float num, res, avg;
   // implicit type cast can make the code more portable and in some cases more secure
-  size_t i;
-  for (i = 0; i < 5; i++)
+  size_t i = 0;
+  while (i < 5)
   {
     cout << "num " << i + 1 << ": ";
     cin >> num;
     res += num;
+    i++;
   }
   avg = res / i;
 
-  cout << "The sum and average the numbers you entered are: " << res << " and " << avg << "\n\n";
+  cout << "The sum and average of the numbers you entered are: " << res << " and " << avg << "\n\n";
 
   return 0;
 }
