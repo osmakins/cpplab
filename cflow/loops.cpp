@@ -1,28 +1,33 @@
-/*Write a program that asks a user for five numbers.
-**Print out the sum and average of the five numbers.
-*/
-
 #include <iostream>
-#include <cstddef>
+#include <sstream>
 
 using namespace std;
 
 int main()
 {
+  //use 55 as the number to be guessed
+  int target = 55;
+  int guess = -1;
+  std::cout << "Guess a number between 0 and 100: ";
+  std::cin >> guess;
+  std::cout << guess << "\n";
 
-  float num, res, avg;
-  // implicit type cast can make the code more portable and in some cases more secure
-  size_t i = 0;
-  while (i < 5)
+  while (guess != target)
   {
-    cout << "num " << i + 1 << ": ";
-    cin >> num;
-    res += num;
-    i++;
+    if (guess < target)
+    {
+      cout << guess << " is too low, try again!\n";
+      cin >> guess;
+    }
+    if (guess > target)
+    {
+      cout << guess << " is too high, try again!\n";
+      cin >> guess;
+    }
   }
-  avg = res / i;
 
-  cout << "The sum and average of the numbers you entered are: " << res << " and " << avg << "\n\n";
+  cout << "you have guessed the right number.\n"
+       << guess;
 
   return 0;
 }
