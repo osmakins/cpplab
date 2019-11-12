@@ -1,19 +1,44 @@
-/*Goal: practice functions that do not return
-**a value and do not accept parameters
-*/
+/*Goal: practice returning values from functions*/
 
 #include <iostream>
+using namespace std;
 
-void printMessage(); //note, this is placed BEFORE main()
+float add(float m1, float m2);
+float sub(float m1, float m2);
+float mult(float m1, float m2);
+float div(float m1, float m2);
 
 int main()
 {
-  printMessage();
+  float m1 = 4.0;
+  float m2 = 3.5;
+  float answer;
+
+  answer = add(m1, m2);
+  cout << m1 << "+" << m2 << " = " << answer << "\n";
+
+  cout << m1 << "-" << m2 << " = " << sub(m1, m2) << "\n";
+  cout << m1 << "*" << m2 << " = " << mult(m1, m2) << "\n";
+  cout << m1 << "/" << m2 << " = " << div(m1, m2) << "\n";
   return 0;
 }
 
-//note, the definition is conventionally placed after main
-void printMessage()
+float add(float m1, float m2)
 {
-  std::cout << "HEY! I'm from a function!";
+  return m1 + m2;
+}
+
+float sub(float m1, float m2)
+{
+  return m1 - m2;
+}
+
+float mult(float m1, float m2)
+{
+  return m1 * m2;
+}
+
+float div(float m1, float m2)
+{
+  return m1 / m2;
 }
