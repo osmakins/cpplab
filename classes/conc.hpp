@@ -9,7 +9,8 @@ class Cats
   int age;
 
 public:
-  Cats(); //declaring the constructor
+  ~Cats(); // declaring the destructor
+  Cats();  //declaring the constructor
   void setName(string nameIn);
   void setBreed(string breedIn);
   void setAge(int ageIn);
@@ -18,6 +19,12 @@ public:
   int getAge();
   void printInfo();
 };
+
+// Calling the destructor
+Cats::~Cats()
+{
+  cout << "Clean up!";
+}
 //defining the constructor
 Cats::Cats()
 {
